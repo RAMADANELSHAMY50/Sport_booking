@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #faf8ff;
+}
+/* sign up page styles */
+
+#bg {
+  background-image: url("../assets/images/fields/unnamed.jpg");
+  opacity: 0.9;
+  background-size:cover ; /* Adjust the size as needed */
+  background-position: center;
+  height: 100vh; /* Full viewport height */
+
+  .content {
+    width: 75%;
+    padding: 30px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(18px);
+    color: white;
+    z-index: 10;
+    i {
+      color: #00e676;
+    }
+    p {
+      color: #aea9a9;
+    }
+
+    .star{
+        border-color: rgba(193, 185, 185, 0.621) !important;
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(18px);
+    }
+  }
+}
+
+.Left_Side{
+
+  .line{
+    height: 1px;
+    background-color: #ccc;
+  }
+}
+
+.sign_footer{
+  a:hover{
+    color: #000 !important;
+  }
+}
+
+/* contact page styles */
+.contact{
+  background: #d2d9f417;
+
+  form{
+    input , textarea{
+      background: #d2d9f444;
+    } 
+  }
+  .accordion{
+    .accordion-button{
+    padding: 20px 24px;
+}
+
+.accordion-button::after{
+    margin-right: auto;
+    margin-left: 15px;
+}
+}
+  }
+
+  /*footer styles */
+  footer{
+    background: #283044;
+    .container{
+      a:hover{
+        color: #00e676 !important;
+      }
+    }
+  }

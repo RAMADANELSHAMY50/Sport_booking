@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../css/responsive.css">
+            <link rel="stylesheet" href="../css/base.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <main class="d-flex">
+
+            <!-- Right Side: Login Form -->
+            <section class="Right_Side col-md-7 d-none d-md-flex flex-column justify-content-center align-items-center text-center p-5 text-white"
+                id="bg">
+                <!-- Glassmorphism Content Overlay -->
+                <div
+                    class="content p-5 rounded-4  ">
+                    <div class="d-flex align-items-center gap-2">
+                        <i class="bi bi-dribbble fs-3"></i>
+                        <h1
+                            class="fs-1 fw-bold text-white">سبورتس
+                            لودج</h1>
+                    </div>
+                    <p
+                        class=" fs-5">
+                        اكتشف شغفك، احجز ملعبك، وابدأ رحلتك الرياضية اليوم مع
+                        أكثر منصات الحجز تطوراً في المنطقة.
+                    </p>
+                    <div class=" d-flex gap-4 mt-4">
+                        <div
+                            class="star border rounded-pill px-3 py-2 d-flex align-items-center gap-2  ">
+                            <i class="bi bi-star-fill text-warning"></i>
+                            <span class>تقييم
+                                4.9/5</span>
+                        </div>
+                        <div
+                            class="star border rounded-pill px-3 py-2 d-flex align-items-center gap-2  ">
+                            <i class="bi bi-people-fill"></i>
+                            <span class>٥٠ ألف+
+                                رياضي</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Left Side sign up: -->
+            <section class="Left_Side col-sm-12 col-md-5 d-flex flex-column justify-content-center align-items-center p-5 ">
+                <div class="side w-sm-100 w-75">
+                    <div class="text-black mb-4">
+                        <h2>مرحباً
+                            بك مجدداً</h2>
+                        <p>قم
+                            بتسجيل الدخول للوصول إلى حجوزاتك المفضلة</p>
+                    </div>
+
+                    <!-- Login Form -->
+                    <form id="loginForm">
+                        <div class>
+                            <label class for="email">البريد الإلكتروني</label>
+                            <div class="text-black d-flex align-items-center gap-2 border rounded-4 p-1 pe-2 mb-4">
+                                <i class="bi bi-envelope"></i>
+                                <input class="border-0" id="email" placeholder="example@sports.com"
+                                    type="email" >
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between">
+                                <label class for="password">كلمة المرور</label>
+                                <a class="text-decoration-none" href="#">نسيت كلمة المرور؟</a>
+                            </div>
+                            <div class="text-black d-flex align-items-center justify-content-between gap-2 border rounded-4 p-1 pe-2 mb-4">
+                                <input class="border-0" id="password" placeholder="••••••••"
+                                    type="password">
+                                <i class="bi bi-eye-slash"></i>
+                                <i class="bi bi-eye-fill"></i>    
+                            </div>
+                        </div>
+                        <div>
+                            <input id="remember" type="checkbox">
+                            <label for="remember">تذكرني على هذا الجهاز</label>
+                        </div>
+                        <button class="btn bg-success text-white w-100 my-4 " type="submit">
+                            تسجيل الدخول
+                        </button>
+                    </form>
+                    <div class>
+                        <p class="text-center ">
+                            ليس لديك حساب؟
+                            <a class="text-decoration-none"
+                                href="#">إنشاء حساب جديد</a>
+                        </p>
+                    </div>
+                    <!-- Simple Footer for Auth Page -->
+                    <footer class="sign_footer">
+                        <div
+                            class="d-flex gap-4 justify-content-center mt-4">
+                            <a class="text-decoration-none text-secondary"
+                                href="#">سياسة الخصوصية</a>
+                            <a class="text-decoration-none text-secondary"
+                                href="#">شروط الاستخدام</a>
+                            <a class="text-decoration-none text-secondary"
+                                href="#">مركز المساعدة</a>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            
+        </main>
+
+        <script src="../js/login.js"></script>
+        <script src="../js/validation.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

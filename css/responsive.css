@@ -1,0 +1,9 @@
+/* sign_up */
+@media (max-width: 1024px) {
+    .Left_Side{
+      padding: 2rem !important;
+        .side{
+            width: 100% !important;
+        }
+    }
+}

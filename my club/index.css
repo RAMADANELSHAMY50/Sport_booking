@@ -1,0 +1,268 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f2f2f2;
+}
+
+.container{
+    width:90%;
+    margin:30px auto;
+    display:flex;
+    gap:20px;
+}
+/*  Filter */
+
+.filter{
+    width:25%;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    height:fit-content;
+}
+
+.filter h2{
+    margin-bottom:15px;
+}
+
+.filter h3{
+    margin-top:20px;
+    margin-bottom:10px;
+}
+
+.filter select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+.filter label{
+    font-size:15px;
+}
+
+.filter input[type="range"]{
+    width:100%;
+}
+
+.filter button{
+    width:100%;
+    padding:12px;
+    margin-top:20px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.filter button:hover{
+    background:darkgreen;
+}
+
+/* Content  */
+
+.content{
+    width:75%;
+}
+
+.title{
+    margin-bottom:25px;
+}
+
+.title h1{
+    margin-bottom:8px;
+}
+
+.title p{
+    color:gray;
+}
+
+/* Cards  */
+
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:300px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.info{
+    padding:15px;
+}
+
+.info h2{
+    font-size:22px;
+    margin-bottom:10px;
+}
+
+.info p{
+    color:orange;
+    margin-bottom:10px;
+}
+
+.info h3{
+    color:green;
+    margin-bottom:15px;
+}
+
+.info button{
+    width:100%;
+    padding:10px;
+    background:green;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.info button:hover{
+    background:darkgreen;
+}
+
+.info button a{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+/* Pages */
+
+.pages{
+    margin-top:30px;
+    text-align:center;
+}
+
+.pages button{
+    padding:10px 20px;
+    border:none;
+    background:green;
+    color:white;
+    border-radius:5px;
+    margin:5px;
+    cursor:pointer;
+}
+
+.pages button:hover{
+    background:darkgreen;
+}
+
+/*  Responsive */
+
+@media(max-width:900px){
+
+.container{
+    flex-direction:column;
+}
+
+.filter{
+    width:100%;
+}
+
+.content{
+    width:100%;
+}
+
+.cards{
+    justify-content:center;
+}
+
+.card{
+    width:90%;
+}
+
+}
+/* Booking  */
+
+.booking-container{
+
+    width:100%;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f2f2f2;
+
+}
+
+.booking-card{
+
+    width:450px;
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    box-shadow:0 0 10px rgba(0,0,0,.1);
+
+}
+
+.booking-card img{
+
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+.booking-card h1{
+
+    margin:20px 0;
+
+}
+
+.booking-card p{
+
+    margin:10px 0;
+    line-height:25px;
+
+}
+
+.booking-card button{
+
+    width:100%;
+    padding:12px;
+    background:green;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:20px;
+
+}
+
+.booking-card button:hover{
+
+    background:darkgreen;
+
+}
+
+.booking-card a{
+
+    text-decoration:none;
+    color:green;
+    font-weight:bold;
+
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبورتس لودج - الرئيسية</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- ===================== الهيدر (شريط التنقل) ===================== -->
+    <header class="site-header">
+        <div class="container header-content">
+
+            <!-- شعار الموقع -->
+            <div class="logo">
+                <span class="logo-icon">⚽</span>
+                <span class="logo-text">سبورتس لودج</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">الرئيسية</a></li>
+                    <li><a href="#fields">الملاعب</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <a href="#fields" class="btn btn-primary header-btn">احجز الآن</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h1>احجز ملعبك المفضل في دقائق</h1>
+            <p>أسهل طريقة لحجز أفضل الملاعب الرياضية القريبة منك بضغطة زر</p>
+
+            <div class="search-box">
+                <div class="search-field">
+                    <label for="sport-type">نوع الرياضة</label>
+                    <select id="sport-type">
+                        <option value="">اختر الرياضة</option>
+                        <option value="football">كرة القدم</option>
+                        <option value="basketball">كرة السلة</option>
+                        <option value="tennis">تنس</option>
+                        <option value="volleyball">كرة طائرة</option>
+                    </select>
+                </div>
+
+                <div class="search-field">
+                    <label for="booking-date">التاريخ</label>
+                    <input type="date" id="booking-date">
+                </div>
+
+                <div class="search-field">
+                    <label for="area">المنطقة</label>
+                    <input type="text" id="area" placeholder="مثال: التجمع الخامس">
+                </div>
+
+                <button type="button" class="btn btn-primary search-btn">
+                    🔍 بحث
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== قسم الرياضات المتاحة ===================== -->
+    <section class="sports-categories container">
+        <h2 class="section-title">الرياضات المتاحة</h2>
+
+        <div class="categories-grid">
+            <button class="category-card" data-sport="football">
+                <span class="category-icon">⚽</span>
+                <span class="category-name">كرة القدم</span>
+            </button>
+
+            <button class="category-card" data-sport="tennis">
+                <span class="category-icon">🎾</span>
+                <span class="category-name">تنس</span>
+            </button>
+
+            <button class="category-card" data-sport="basketball">
+                <span class="category-icon">🏀</span>
+                <span class="category-name">كرة السلة</span>
+            </button>
+
+            <button class="category-card" data-sport="volleyball">
+                <span class="category-icon">🏐</span>
+                <span class="category-name">كرة طائرة</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===================== قسم الملاعب الموصى بها ===================== -->
+    <section class="recommended-fields container" id="fields">
+        <h2 class="section-title">ملاعب موصى بها</h2>
+
+        <div class="fields-grid">
+
+            <!-- كارت ملعب رقم 1 -->
+            <a href="field-details.html" class="field-card">
+                <img src="assets/images/stadium1.jpg" alt="ملعب النخبة بلس" class="field-image">
+                <div class="field-info">
+                    <h3 class="field-name">ملعب النخبة بلس</h3>
+                    <p class="field-location">📍 فرع التجمع</p>
+                    <div class="field-rating">⭐ 4.8</div>
+                </div>
+            </a>
+
+            <!-- كارت ملعب رقم 2 -->
+            <a href="field-details.html" class="field-card">
+                <img src="assets/images/stadium2.jpg" alt="ملعب توحيد يا" class="field-image">
+                <div class="field-info">
+                    <h3 class="field-name">ملعب توحيد يا</h3>
+                    <p class="field-location">📍 مدينة نصر</p>
+                    <div class="field-rating">⭐ 4.6</div>
+                </div>
+            </a>
+
+            <!-- كارت ملعب رقم 3 -->
+            <a href="field-details.html" class="field-card">
+                <img src="assets/images/stadium3.jpg" alt="ملعب النصر" class="field-image">
+                <div class="field-info">
+                    <h3 class="field-name">ملعب النصر</h3>
+                    <p class="field-location">📍 المعادي</p>
+                    <div class="field-rating">⭐ 4.7</div>
+                </div>
+            </a>
+
+            <!-- كارت ملعب رقم 4 -->
+            <a href="field-details.html" class="field-card">
+                <img src="assets/images/stadium4.jpg" alt="ملعب الأهلي سبورتنج" class="field-image">
+                <div class="field-info">
+                    <h3 class="field-name">ملعب الأهلي سبورتنج</h3>
+                    <p class="field-location">📍 مصر الجديدة</p>
+                    <div class="field-rating">⭐ 4.9</div>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- ===================== الفوتر ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 سبورتس لودج - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- ملف الجافاسكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سبورتس لودج - تفاصيل الملعب</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <div class="container header-content">
+
+            <div class="logo">
+                <span class="logo-icon">⚽</span>
+                <span class="logo-text">سبورتس لودج</span>
+            </div>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="index.html#fields" class="active">الملاعب</a></li>
+                    <li><a href="#about">من نحن</a></li>
+                    <li><a href="#contact">تواصل معنا</a></li>
+                </ul>
+            </nav>
+
+            <a href="#booking-panel" class="btn btn-primary header-btn">احجز الآن</a>
+        </div>
+    </header>
+
+    <main class="container details-page">
+
+        <section class="gallery-section">
+
+            <div class="main-image">
+                <img id="main-field-image" src="assets/images/stadium-main.jpg" alt="ملعب النخبة بلس">
+            </div>
+
+            <div class="thumbnail-list">
+                <img class="thumbnail active" src="assets/images/stadium-main.jpg" alt="صورة الملعب 1">
+                <img class="thumbnail" src="assets/images/stadium-thumb1.jpg" alt="صورة الملعب 2">
+                <img class="thumbnail" src="assets/images/stadium-thumb2.jpg" alt="صورة الملعب 3">
+                <img class="thumbnail" src="assets/images/stadium-thumb3.jpg" alt="صورة الملعب 4">
+            </div>
+        </section>
+
+        <div class="details-layout">
+
+            <!--  العمود الأيمن: معلومات الملعب  -->
+            <div class="field-details-content">
+
+                <!-- اسم الملعب والموقع والتقييم -->
+                <div class="field-header">
+                    <h1>ملعب النخبة بلس - فرع التجمع</h1>
+                    <p class="field-location">📍 التجمع الخامس، القاهرة</p>
+                </div>
+
+                <!-- وصف الملعب -->
+                <section class="field-description">
+                    <h2>عن الملعب</h2>
+                    <p>
+                        ملعب النخبة بلس هو من أفضل الملاعب في منطقة التجمع الخامس،
+                        يتميز بأرضية عشب طبيعي عالية الجودة وإضاءة قوية تسمح باللعب ليلاً.
+                        يوفر الملعب مكان مريح لممارسة كرة القدم مع الأصدقاء أو تنظيم مباريات صغيرة.
+                    </p>
+                </section>
+
+                <!-- المرافق والخدمات -->
+                <section class="field-facilities">
+                    <h2>المرافق والخدمات</h2>
+                    <div class="facilities-grid">
+                        <div class="facility-item">
+                            <span class="facility-icon">🅿️</span>
+                            <span>باركينج</span>
+                        </div>
+                        <div class="facility-item">
+                            <span class="facility-icon">🚿</span>
+                            <span>دورات مياه</span>
+                        </div>
+                        <div class="facility-item">
+                            <span class="facility-icon">💡</span>
+                            <span>إضاءة ليلية</span>
+                        </div>
+                        <div class="facility-item">
+                            <span class="facility-icon">☕</span>
+                            <span>كافيه</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- التقييمات -->
+                <section class="field-ratings">
+                    <h2>التقييمات</h2>
+                    <div class="rating-summary">
+                        <span class="rating-number">4.8</span>
+                        <div class="rating-stars">⭐⭐⭐⭐⭐</div>
+                        <span class="rating-count">(120 تقييم)</span>
+                    </div>
+                </section>
+            </div>
+
+            <!-- ============ العمود الأيسر: صندوق الحجز ============ -->
+            <aside class="booking-panel" id="booking-panel">
+                <h2>احجز الآن</h2>
+
+                <!-- اختيار التاريخ -->
+                <div class="booking-block">
+                    <h3>اختر التاريخ</h3>
+                    <div class="date-list">
+                        <button class="date-btn active" data-date="2026-07-06">
+                            <span class="date-day">اليوم</span>
+                            <span class="date-num">6</span>
+                        </button>
+                        <button class="date-btn" data-date="2026-07-07">
+                            <span class="date-day">غداً</span>
+                            <span class="date-num">7</span>
+                        </button>
+                        <button class="date-btn" data-date="2026-07-08">
+                            <span class="date-day">الأربعاء</span>
+                            <span class="date-num">8</span>
+                        </button>
+                        <button class="date-btn" data-date="2026-07-09">
+                            <span class="date-day">الخميس</span>
+                            <span class="date-num">9</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- اختيار الوقت -->
+                <div class="booking-block">
+                    <h3>اختر الوقت</h3>
+                    <div class="time-list">
+                        <button class="time-btn">4:00 م</button>
+                        <button class="time-btn">5:00 م</button>
+                        <button class="time-btn">6:00 م</button>
+                        <button class="time-btn">7:00 م</button>
+                        <button class="time-btn">8:00 م</button>
+                        <button class="time-btn">9:00 م</button>
+                    </div>
+                </div>
+
+                <!-- السعر وزر تأكيد الحجز -->
+                <div class="booking-summary">
+                    <div class="price-row">
+                        <span>السعر لكل ساعة</span>
+                        <span class="price">250 جنيه</span>
+                    </div>
+                    <button type="button" class="btn btn-primary book-now-btn">تأكيد الحجز</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- ===================== الفوتر ===================== -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2026 سبورتس لودج - جميع الحقوق محفوظة</p>
+        </div>
+    </footer>
+
+    <!-- ملف الجافاسكريبت -->
+    <script src="js/script.js"></script>
+</body>
+</html>
